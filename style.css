@@ -1,0 +1,45 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  background-image: url("/images/jovem-mulher-bonita-com-longos-cabelos-loiros-em-um-vestido-branco-em-um-campo-de-trigo-no-inicio-da-manha-ao-nascer-do-sol-o-verao-e-a-hora-dos-sonhadores-cabelos-voadores-uma-mulher-correndo-pelo-campo-nos-raios.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 480px;
+  width: 320px;
+  border-radius: 25px;
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.container .heart{
+  position: absolute;
+  font-size: 80px;
+  color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.visible{
+  animation: merge-icon 0.8s linear forwards;
+}
+@keyframes merge-icon {
+  0%{
+    opacity: 0%;
+  }
+  50%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
